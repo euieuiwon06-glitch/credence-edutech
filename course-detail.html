@@ -1,0 +1,743 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+.gradient-blue-btn {
+  background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+}
+.gradient-blue-badge {
+  background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+}
+.gradient-blue-subtle {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.08) 0%, rgba(96, 165, 250, 0.12) 100%);
+}
+.gradient-blue-border {
+  border-image: linear-gradient(135deg, #3B82F6, #60A5FA) 1;
+}
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"tertiary-fixed-dim":"#ffb95f","inverse-surface":"#283044","surface-container":"#f0f4fa","on-surface":"#0f172a","on-error-container":"#93000a","inverse-on-surface":"#eef0ff","secondary-fixed":"#e0f2fe","secondary-fixed-dim":"#bae6fd","outline":"#94a3b8","secondary":"#0284c7","primary-container":"#38bdf8","on-tertiary":"#ffffff","surface":"#f8fafc","tertiary-fixed":"#ffddb8","on-secondary-container":"#0369a1","surface-variant":"#e2e8f0","secondary-container":"#38bdf8","surface-bright":"#ffffff","surface-container-lowest":"#ffffff","primary-fixed":"#e0f2fe","on-primary-fixed":"#0369a1","tertiary":"#0284c7","on-secondary-fixed":"#0c4a6e","on-secondary":"#ffffff","surface-container-low":"#f1f5f9","on-error":"#ffffff","primary-fixed-dim":"#bae6fd","background":"#f8fafc","error":"#ba1a1a","on-primary":"#ffffff","error-container":"#ffdad6","on-primary-fixed-variant":"#0284c7","outline-variant":"#cbd5e1","surface-dim":"#e2e8f0","on-secondary-fixed-variant":"#0369a1","surface-tint":"#3b82f6","on-surface-variant":"#475569","on-tertiary-container":"#0369a1","primary":"#3b82f6","surface-container-high":"#e2e8f0","inverse-primary":"#93c5fd","on-background":"#0f172a","on-tertiary-fixed":"#082f49","on-tertiary-fixed-variant":"#0369a1","surface-container-highest":"#cbd5e1","on-primary-container":"#ffffff","tertiary-container":"#e0f2fe"},borderRadius:{DEFAULT:"0.375rem",lg:"0.75rem",xl:"1rem","2xl":"1.25rem",full:"9999px"},fontFamily:{sans:["Inter","system-ui","sans-serif"]}}}};</script></head><body class="bg-background font-sans text-on-surface antialiased leading-relaxed"><header class="fixed top-0 left-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-slate-100 shadow-sm"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-8"><a class="flex items-center gap-3 shrink-0" data-path="home" href="index.html"><img alt="Credence EduTech Logo" class="h-8 w-auto object-contain" src="assets/img_506f030a9a.png"><span class="text-xl text-blue-500 tracking-tight font-bold">Credence</span></a><nav class="hidden lg:flex items-center gap-6" data-active-classes="text-blue-500 font-medium font-bold"><a class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors py-2" data-path="home" href="index.html">홈</a><a class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors py-2" data-path="courses" href="courses.html">교육과정 탐색</a><a aria-current="page" class="transition-colors py-2 text-blue-500 font-semibold" data-path="course-detail" href="course-detail.html">대표 과정 상세</a><a class="text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors py-2" data-path="about-and-b2b" href="b2b.html">기업소개 &amp; B2B</a></nav></div><div class="flex items-center gap-4 shrink-0"><div class="hidden xl:flex items-center relative"><span class="material-symbols-outlined absolute left-3 text-slate-400 text-[20px] pointer-events-none">search</span><input class="w-56 h-10 pl-9 pr-4 bg-slate-50 border border-slate-200 rounded-lg text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:bg-white focus:ring-2 focus:ring-blue-400/50 transition-all" placeholder="과정명, 역량 키워드 검색" type="search"></div><a class="hidden md:inline-flex text-sm font-medium text-slate-600 hover:text-blue-600 transition-colors px-3 py-2" data-path="b2b-inquiry" href="b2b.html#b2b-inquiry">기업교육 문의</a><a class="inline-flex items-center justify-center text-sm font-medium gradient-blue-btn text-white rounded-lg px-5 py-2.5 shadow-sm hover:opacity-95 transition-all" data-path="consultation-request" href="index.html#consultation-card">수강 상담 신청</a><div class="w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 border border-blue-100"><span class="material-symbols-outlined text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Central Hero Section (Center-aligned, clean & spacious) -->
+<div class="relative w-full overflow-hidden bg-white border-b border-slate-100 py-20 px-6">
+<div class="absolute -top-36 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-gradient-to-b from-blue-400/10 via-sky-300/5 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-4xl mx-auto text-center relative z-10 flex flex-col items-center">
+<!-- Breadcrumbs Centered -->
+<nav class="flex items-center justify-center gap-2 mb-6 text-xs text-slate-400 font-medium">
+<a class="hover:text-blue-500 transition-colors" href="#">홈</a>
+<span class="material-symbols-outlined text-[13px]">chevron_right</span>
+<a class="hover:text-blue-500 transition-colors" href="#">교육과정</a>
+<span class="material-symbols-outlined text-[13px]">chevron_right</span>
+<span class="text-blue-500 font-semibold">생성형 AI 풀스택</span>
+</nav>
+<!-- Clean Refined Badges -->
+<div class="inline-flex items-center gap-2 mb-6">
+<span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full text-xs font-semibold text-white gradient-blue-badge shadow-sm">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+K-디지털 트레이닝 전액 지원
+</span>
+<span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium text-blue-700 bg-blue-50 border border-blue-100">
+<span class="material-symbols-outlined text-[14px]">payments</span>
+월 최대 31.6만원 장려금
+</span>
+</div>
+<!-- Main Title & Pitch -->
+<h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 tracking-tight mb-5" style="line-height: 1.35;">
+생성형 AI 기반 풀스택 웹 개발자 부트캠프
+</h1>
+<p class="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed font-normal mb-8" style="line-height: 1.8;">
+기초 웹부터 RAG 아키텍처 및 대규모 분산 시스템까지.<br class="hidden sm:inline">
+6개월 실전 프로젝트로 입증하는 주니어 엔지니어링 코스
+</p>
+<!-- Clean Center Metric Badges Pill Strip -->
+<div class="flex flex-wrap items-center justify-center gap-3">
+<div class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-slate-50 border border-slate-200/80 text-slate-700 text-sm font-medium shadow-xs">
+<span class="material-symbols-outlined text-blue-500 text-[18px]">calendar_today</span>
+<span class="">교육 기간 <strong class="text-slate-900 font-semibold ml-1">24주 (6개월)</strong></span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-slate-50 border border-slate-200/80 text-slate-700 text-sm font-medium shadow-xs">
+<span class="material-symbols-outlined text-blue-500 text-[18px]">group</span>
+<span class="">모집 정원 <strong class="text-slate-900 font-semibold ml-1">30명 소수정예</strong></span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-blue-50/70 border border-blue-200 text-blue-900 text-sm font-medium shadow-xs">
+<span class="material-symbols-outlined text-blue-500 text-[18px]">credit_card_off</span>
+<span class="">수강료 부담 <strong class="text-blue-600 font-semibold ml-1">0원 (국비 전액 지원)</strong></span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2.5 rounded-full bg-slate-50 border border-slate-200/80 text-slate-700 text-sm font-medium shadow-xs">
+<span class="material-symbols-outlined text-blue-500 text-[18px]">code</span>
+<span class="">코드 피드백 <strong class="text-slate-900 font-semibold ml-1">주 3회 1:1 밀착 리뷰</strong></span>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Body Grid: 70% Content + 30% Sticky Enrollment -->
+<div class="max-w-7xl mx-auto px-6 lg:px-12 py-16 w-full">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+<!-- Left Column (8 of 12 cols) -->
+<div class="lg:col-span-8 space-y-20">
+<!-- Navigation Tab Anchor Bar -->
+<div class="sticky top-20 z-40 bg-white/95 backdrop-blur-md py-3.5 px-2 rounded-xl border border-slate-200/80 shadow-xs flex items-center gap-2 overflow-x-auto">
+<a class="px-4 py-2 rounded-lg text-sm font-medium gradient-blue-btn text-white shadow-sm whitespace-nowrap" href="#overview">과정 소개</a>
+<a class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition-colors whitespace-nowrap" href="#curriculum">주차별 커리큘럼</a>
+<a class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition-colors whitespace-nowrap" href="#instructors">멘토진 소개</a>
+<a class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition-colors whitespace-nowrap" href="#career">취업 지원 &amp; 포트폴리오</a>
+<a class="px-4 py-2 rounded-lg text-sm font-medium text-slate-600 hover:text-blue-600 hover:bg-slate-50 transition-colors whitespace-nowrap" href="#faq">자주 묻는 질문</a>
+</div>
+<!-- Section 1: 과정 소개 (Course Overview) -->
+<section class="space-y-10 scroll-mt-36" id="overview">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 tracking-wider uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
+Why Credence EduTech
+</div>
+<h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight" style="line-height: 1.4;">
+단순 코딩을 넘어, 실제 프로덕션 환경을 경험합니다
+</h2>
+<p class="text-base text-slate-600 leading-relaxed max-w-2xl" style="line-height: 1.8;">
+토이 프로젝트를 넘어 2025 IT 업계가 요구하는 생성형 AI API 연동, 분산 캐싱, 대규모 벡터 검색 파이프라인을 온전히 직접 구축합니다.
+</p>
+</div>
+<!-- 4 Core Pillars Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Bento Card 1 -->
+<div class="p-7 rounded-2xl bg-white border border-slate-200/80 hover:border-blue-300 transition-all shadow-xs flex flex-col justify-between">
+<div>
+<div class="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">실무형 RAG &amp; LLMOps</h3>
+<p class="text-sm text-slate-600 leading-relaxed" style="line-height: 1.75;">
+Vector DB와 LangChain 기반 프롬프트 체이닝, 실시간 하이브리드 검색 및 환각 방지 파이프라인을 체계적으로 구현합니다.
+</p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+<span class="">핵심 스택</span>
+<span class="font-mono text-blue-600 font-semibold">LangChain · pgvector · FastAPI</span>
+</div>
+</div>
+<!-- Bento Card 2 -->
+<div class="p-7 rounded-2xl bg-white border border-slate-200/80 hover:border-blue-300 transition-all shadow-xs flex flex-col justify-between">
+<div>
+<div class="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[24px]">account_tree</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">엔터프라이즈 백엔드 &amp; DB</h3>
+<p class="text-sm text-slate-600 leading-relaxed" style="line-height: 1.75;">
+PostgreSQL 튜닝, Docker 컨테이너 오케스트레이션과 Redis 캐싱을 통해 대용량 동시 접속을 버티는 견고한 백엔드를 설계합니다.
+</p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+<span class="">핵심 스택</span>
+<span class="font-mono text-blue-600 font-semibold">Node.js · Docker · PostgreSQL</span>
+</div>
+</div>
+<!-- Bento Card 3 -->
+<div class="p-7 rounded-2xl bg-white border border-slate-200/80 hover:border-blue-300 transition-all shadow-xs flex flex-col justify-between">
+<div>
+<div class="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[24px]">devices</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">모던 프론트엔드 엔지니어링</h3>
+<p class="text-sm text-slate-600 leading-relaxed" style="line-height: 1.75;">
+Next.js App Router, React Server Components 및 TypeScript를 활용해 웹 표준과 접근성을 갖춘 고성능 대시보드를 제작합니다.
+</p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+<span class="">핵심 스택</span>
+<span class="font-mono text-blue-600 font-semibold">Next.js 14 · TypeScript · Tailwind</span>
+</div>
+</div>
+<!-- Bento Card 4 -->
+<div class="p-7 rounded-2xl bg-white border border-slate-200/80 hover:border-blue-300 transition-all shadow-xs flex flex-col justify-between">
+<div>
+<div class="w-11 h-11 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-5">
+<span class="material-symbols-outlined text-[24px]">handshake</span>
+</div>
+<h3 class="text-lg font-bold text-slate-900 mb-2">스타트업 실전 연계 캡스톤</h3>
+<p class="text-sm text-slate-600 leading-relaxed" style="line-height: 1.75;">
+파트너 스타트업의 실제 비즈니스 데이터를 기반으로 애자일 스프린트, CI/CD, 모니터링까지 완성형 서비스를 직접 론칭합니다.
+</p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-slate-400">
+<span class="">결과물</span>
+<span class="text-blue-600 font-semibold">실제 라이브 웹 서비스 배포</span>
+</div>
+</div>
+</div>
+<!-- Learning Progression Timeline -->
+<div class="p-8 rounded-2xl bg-slate-50 border border-slate-200/70 space-y-6">
+<h3 class="text-base font-bold text-slate-900">6개월 집중 성장 로드맵 (960시간)</h3>
+<div class="relative pl-6 space-y-6 before:content-[''] before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-slate-200">
+<div class="relative">
+<div class="absolute -left-[29px] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-500 ring-4 ring-slate-50"></div>
+<div class="text-sm font-semibold text-slate-900">1 ~ 2개월차 : Foundations &amp; Modern Web</div>
+<p class="text-xs sm:text-sm text-slate-500 mt-1" style="line-height: 1.7;">TypeScript 및 React 코어 멘탈 모델 완성과 반응형 프론트엔드 구축</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[29px] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-500 ring-4 ring-slate-50"></div>
+<div class="text-sm font-semibold text-slate-900">3개월차 : Backend &amp; Data Layer Architecture</div>
+<p class="text-xs sm:text-sm text-slate-500 mt-1" style="line-height: 1.7;">REST API 설계, PostgreSQL 정규화 모델링, Docker 컨테이너 및 AWS 배포</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[29px] top-1.5 w-3.5 h-3.5 rounded-full bg-blue-500 ring-4 ring-slate-50"></div>
+<div class="text-sm font-semibold text-slate-900">4개월차 : Generative AI Integration &amp; RAG</div>
+<p class="text-xs sm:text-sm text-slate-500 mt-1" style="line-height: 1.7;">LLM 프롬프트 엔지니어링, 임베딩 벡터 검색 엔진, 실시간 스트리밍 UI 연동</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[29px] top-1.5 w-3.5 h-3.5 rounded-full gradient-blue-btn ring-4 ring-slate-50"></div>
+<div class="text-sm font-semibold text-blue-600">5 ~ 6개월차 : Enterprise Capstone &amp; Career Matching</div>
+<p class="text-xs sm:text-sm text-slate-500 mt-1" style="line-height: 1.7;">실서비스 라이브 론칭, 부하 테스트, 멘토 테크 리뷰 및 채용 연계 데모데이</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: 주차별 커리큘럼 (Syllabus Accordions) -->
+<section class="space-y-6 scroll-mt-36" id="curriculum">
+<div class="flex items-end justify-between">
+<div>
+<div class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 tracking-wider uppercase mb-1">
+Curriculum
+</div>
+<h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">주차별 커리큘럼 요약</h2>
+</div>
+<button class="text-xs text-blue-600 hover:text-blue-700 font-semibold py-1 px-2.5 rounded-md hover:bg-blue-50 transition-colors" id="toggle-all-curriculum">모두 접기</button>
+</div>
+<div class="space-y-3" id="curriculum-accordion-container">
+<!-- Part 1 Accordion -->
+<div class="accordion-item rounded-xl bg-white border border-slate-200/80 shadow-xs overflow-hidden">
+<button class="accordion-header w-full px-6 py-4.5 flex items-center justify-between text-left hover:bg-slate-50/70 transition-colors">
+<div class="flex items-center gap-4">
+<span class="w-9 h-9 rounded-lg bg-slate-100 text-blue-600 flex items-center justify-center text-sm font-bold shrink-0">01</span>
+<div>
+<span class="text-xs text-slate-400 font-medium">1 ~ 4주차</span>
+<h4 class="text-base font-bold text-slate-900">모던 프론트엔드 (TypeScript, React, Tailwind CSS)</h4>
+</div>
+</div>
+<span class="material-symbols-outlined accordion-icon text-slate-400 transition-transform duration-200">expand_more</span>
+</button>
+<div class="accordion-content px-6 pb-5 pt-1 space-y-3 text-sm text-slate-600 border-t border-slate-100/70">
+<p class="text-slate-600 leading-relaxed pt-2" style="line-height: 1.8;">
+JS 비동기 원리와 TypeScript 타입 모델링을 기반으로 유연한 React 반응형 컴포넌트 라이브러리를 제작합니다.
+</p>
+<div class="flex flex-wrap gap-2 pt-1 text-xs text-slate-500">
+<span class="px-2.5 py-1 bg-slate-100 rounded-md font-medium text-slate-700">TS 비동기 &amp; 엄격 타입</span>
+<span class="px-2.5 py-1 bg-slate-100 rounded-md font-medium text-slate-700">React 18 Custom Hook</span>
+<span class="px-2.5 py-1 bg-slate-100 rounded-md font-medium text-slate-700">대시보드 실습</span>
+</div>
+</div>
+</div>
+<!-- Part 2 Accordion -->
+<div class="accordion-item rounded-xl bg-white border border-slate-200/80 shadow-xs overflow-hidden">
+<button class="accordion-header w-full px-6 py-4.5 flex items-center justify-between text-left hover:bg-slate-50/70 transition-colors">
+<div class="flex items-center gap-4">
+<span class="w-9 h-9 rounded-lg bg-slate-100 text-blue-600 flex items-center justify-center text-sm font-bold shrink-0">02</span>
+<div>
+<span class="text-xs text-slate-400 font-medium">5 ~ 9주차</span>
+<h4 class="text-base font-bold text-slate-900">백엔드 아키텍처 및 데이터베이스 (Node.js, PostgreSQL, Docker)</h4>
+</div>
+</div>
+<span class="material-symbols-outlined accordion-icon text-slate-400 transition-transform duration-200">expand_more</span>
+</button>
+<div class="accordion-content px-6 pb-5 pt-1 space-y-3 text-sm text-slate-600 border-t border-slate-100/70">
+<p class="text-slate-600 leading-relaxed pt-2" style="line-height: 1.8;">
+확장성 높은 계층형 백엔드 설계 및 대용량 트랜잭션을 안정적으로 다루는 PostgreSQL 모델링과 인프라 배포를 실습합니다.
+</p>
+<div class="flex flex-wrap gap-2 pt-1 text-xs text-slate-500">
+<span class="px-2.5 py-1 bg-slate-100 rounded-md font-medium text-slate-700">RESTful API &amp; 인덱스 튜닝</span>
+<span class="px-2.5 py-1 bg-slate-100 rounded-md font-medium text-slate-700">Docker 컨테이너라이징</span>
+<span class="px-2.5 py-1 bg-slate-100 rounded-md font-medium text-slate-700">Redis 캐싱 &amp; CI/CD</span>
+</div>
+</div>
+</div>
+<!-- Part 3 Accordion (Open Highlighted with Gradient Badge) -->
+<div class="accordion-item rounded-xl bg-white border border-blue-200 shadow-sm overflow-hidden">
+<button class="accordion-header w-full px-6 py-4.5 flex items-center justify-between text-left hover:bg-blue-50/40 transition-colors">
+<div class="flex items-center gap-4">
+<span class="w-9 h-9 rounded-lg gradient-blue-btn text-white flex items-center justify-center text-sm font-bold shrink-0 shadow-xs">03</span>
+<div>
+<span class="text-xs text-blue-600 font-bold">10 ~ 16주차 · 핵심 트랙</span>
+<h4 class="text-base font-bold text-slate-900">생성형 AI 통합 및 RAG 시스템 구축 (LangChain, Vector DB)</h4>
+</div>
+</div>
+<span class="material-symbols-outlined accordion-icon text-blue-500 transition-transform duration-200 rotate-180">expand_more</span>
+</button>
+<div class="accordion-content px-6 pb-5 pt-1 space-y-3 text-sm text-slate-600 border-t border-blue-100">
+<p class="text-slate-600 leading-relaxed pt-2" style="line-height: 1.8;">
+LLM 파운데이션 모델을 프러덕션 웹 서비스에 통합하고 사내 지식 기반 RAG 아키텍처를 엔드투엔드로 구현합니다.
+</p>
+<div class="flex flex-wrap gap-2 pt-1 text-xs text-slate-500">
+<span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md font-medium border border-blue-100">GPT-4o / Claude API 에이전트</span>
+<span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md font-medium border border-blue-100">pgvector &amp; 코사인 유사도 검색</span>
+<span class="px-2.5 py-1 bg-blue-50 text-blue-700 rounded-md font-medium border border-blue-100">실시간 스트리밍 UI</span>
+</div>
+</div>
+</div>
+<!-- Part 4 Accordion -->
+<div class="accordion-item rounded-xl bg-white border border-slate-200/80 shadow-xs overflow-hidden">
+<button class="accordion-header w-full px-6 py-4.5 flex items-center justify-between text-left hover:bg-slate-50/70 transition-colors">
+<div class="flex items-center gap-4">
+<span class="w-9 h-9 rounded-lg bg-slate-100 text-blue-600 flex items-center justify-center text-sm font-bold shrink-0">04</span>
+<div>
+<span class="text-xs text-slate-400 font-medium">17 ~ 24주차</span>
+<h4 class="text-base font-bold text-slate-900">스타트업 실무 연계 캡스톤 프로젝트 &amp; 데모데이</h4>
+</div>
+</div>
+<span class="material-symbols-outlined accordion-icon text-slate-400 transition-transform duration-200">expand_more</span>
+</button>
+<div class="accordion-content px-6 pb-5 pt-1 space-y-3 text-sm text-slate-600 border-t border-slate-100/70">
+<p class="text-slate-600 leading-relaxed pt-2" style="line-height: 1.8;">
+파트너 스타트업 과제를 팀 단위로 기획부터 배포, 성능 튜닝 및 IT 채용담당자 초청 오프라인 데모데이까지 완수합니다.
+</p>
+<div class="flex flex-wrap gap-2 pt-1 text-xs text-slate-500">
+<span class="px-2.5 py-1 bg-slate-100 rounded-md font-medium text-slate-700">애자일 스프린트 배포</span>
+<span class="px-2.5 py-1 bg-slate-100 rounded-md font-medium text-slate-700">Sentry &amp; Datadog 모니터링</span>
+<span class="px-2.5 py-1 bg-slate-100 rounded-md font-medium text-slate-700">기업 채용 매칭 데모데이</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: 멘토진 소개 (Instructors) -->
+<section class="space-y-8 scroll-mt-36" id="instructors">
+<div class="space-y-2">
+<div class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 tracking-wider uppercase">
+Mentors
+</div>
+<h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">현업 테크리드가 직접 지도합니다</h2>
+<p class="text-sm sm:text-base text-slate-600">
+대규모 서비스를 이끌어 온 시니어 엔지니어들이 주 3회 코드 리뷰와 1:1 테크 멘토링을 함께합니다.
+</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Mentor 1 -->
+<div class="rounded-2xl bg-white border border-slate-200/80 shadow-xs overflow-hidden flex flex-col hover:border-blue-300 transition-all">
+<div class="relative h-48 w-full bg-slate-100">
+<img class="w-full h-full object-cover" data-alt="A distinguished Korean male software tech lead in his late 30s wearing a modern minimalist navy blazer and glasses" src="assets/img_3e501506bb.jpg">
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-slate-900/80 text-white text-xs font-medium backdrop-blur-xs">
+Ex-카카오 플랫폼 리드
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="text-base font-bold text-slate-900">강준형 마스터</h3>
+<span class="text-xs text-blue-600 font-semibold">경력 12년</span>
+</div>
+<p class="text-xs text-slate-500 font-medium mb-3">풀스택 아키텍처 &amp; 분산 시스템</p>
+<p class="text-xs text-slate-600 line-clamp-2 leading-relaxed" style="line-height: 1.75;">
+"3년 뒤 동료가 읽어도 의도가 명확한 유지보수 가능한 설계 철학을 가르칩니다."
+</p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-400 font-medium">
+카카오 메인 서비스 백엔드 리드 역임
+</div>
+</div>
+</div>
+<!-- Mentor 2 -->
+<div class="rounded-2xl bg-white border border-slate-200/80 shadow-xs overflow-hidden flex flex-col hover:border-blue-300 transition-all">
+<div class="relative h-48 w-full bg-slate-100">
+<img class="w-full h-full object-cover" data-alt="A professional Korean female AI researcher and software engineer in her early 30s wearing casual contemporary knit" src="assets/img_abdd8c8269.jpg">
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-slate-900/80 text-white text-xs font-medium backdrop-blur-xs">
+Ex-토스 테크리드
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="text-base font-bold text-slate-900">이하은 수석 멘토</h3>
+<span class="text-xs text-blue-600 font-semibold">경력 9년</span>
+</div>
+<p class="text-xs text-slate-500 font-medium mb-3">생성형 AI &amp; LangChain RAG</p>
+<p class="text-xs text-slate-600 line-clamp-2 leading-relaxed" style="line-height: 1.75;">
+"단순 호출자가 아닌, 속도와 비용, 환각을 제어하는 진정한 AI 엔지니어로 이끕니다."
+</p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-400 font-medium">
+토스 금융 AI 어시스턴트 프로젝트 총괄
+</div>
+</div>
+</div>
+<!-- Mentor 3 -->
+<div class="rounded-2xl bg-white border border-slate-200/80 shadow-xs overflow-hidden flex flex-col hover:border-blue-300 transition-all">
+<div class="relative h-48 w-full bg-slate-100">
+<img class="w-full h-full object-cover" data-alt="A visionary young Korean male developer mentor in his mid 30s smiling in an open tech space" src="assets/img_8b5494c3e7.jpg">
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-slate-900/80 text-white text-xs font-medium backdrop-blur-xs">
+Ex-라인 &amp; 현 스타트업 CTO
+</div>
+</div>
+<div class="p-5 flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="text-base font-bold text-slate-900">박성진 멘토</h3>
+<span class="text-xs text-blue-600 font-semibold">경력 10년</span>
+</div>
+<p class="text-xs text-slate-500 font-medium mb-3">모던 React &amp; DX 플랫폼</p>
+<p class="text-xs text-slate-600 line-clamp-2 leading-relaxed" style="line-height: 1.75;">
+"면접관을 설득하는 깊이 있는 답변은 실제 릴리즈 경험에서만 나옵니다."
+</p>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100 text-xs text-slate-400 font-medium">
+라인 프론트엔드 플랫폼 개발팀 역임
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: 포트폴리오 & 취업 지원 (Career Support) -->
+<section class="space-y-8 scroll-mt-36" id="career">
+<div class="space-y-2">
+<div class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 tracking-wider uppercase">
+Career Acceleration
+</div>
+<h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">수료생 평균 취업률 91.4%</h2>
+<p class="text-sm sm:text-base text-slate-600">
+350여 개 IT 파트너 네트워크와 연결된 1:1 맞춤형 커리어 패스트트랙을 지원합니다.
+</p>
+</div>
+<!-- Career Features 3-Column -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-xs space-y-3">
+<div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">description</span>
+</div>
+<h4 class="text-base font-bold text-slate-900">1:1 이력서 &amp; 포트폴리오</h4>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed" style="line-height: 1.75;">
+문제 해결 지표와 기술적 의사결정이 돋보이도록 시니어 테크리드가 직접 첨삭합니다.
+</p>
+</div>
+<div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-xs space-y-3">
+<div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">video_chat</span>
+</div>
+<h4 class="text-base font-bold text-slate-900">실전 기술 모의면접 3회</h4>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed" style="line-height: 1.75;">
+라이브 코딩 테스트, CS 심층 질의, 아키텍처 화이트보드 면접을 실전처럼 트레이닝합니다.
+</p>
+</div>
+<div class="p-6 rounded-2xl bg-white border border-slate-200/80 shadow-xs space-y-3">
+<div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">hub</span>
+</div>
+<h4 class="text-base font-bold text-slate-900">350+ 파트너 채용 연계</h4>
+<p class="text-xs sm:text-sm text-slate-600 leading-relaxed" style="line-height: 1.75;">
+데모데이 직후 서류 전형 면제 또는 1차 면접 직행 혜택을 제공하는 인재풀 매칭을 제공합니다.
+</p>
+</div>
+</div>
+<!-- Partner Logo Badges Box -->
+<div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/70 space-y-3">
+<div class="flex items-center justify-between text-xs font-semibold text-slate-500">
+<span class="">Credence 수료생 주요 채용 협력사</span>
+<span class="">총 352개사 파트너십</span>
+</div>
+<div class="flex flex-wrap items-center gap-2.5 pt-1">
+<span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">카카오엔터프라이즈</span>
+<span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">당근</span>
+<span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">토스뱅크</span>
+<span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">우아한형제들</span>
+<span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">오늘의집</span>
+<span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">업스테이지</span>
+<span class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-medium text-slate-700">뤼튼테크놀로지스</span>
+</div>
+</div>
+</section>
+<!-- Section 5: 자주 묻는 질문 (FAQ) -->
+<section class="space-y-6 scroll-mt-36" id="faq">
+<div class="space-y-2">
+<div class="inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 tracking-wider uppercase">
+FAQ
+</div>
+<h2 class="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight">수강 전 자주 묻는 질문</h2>
+</div>
+<div class="space-y-3" id="faq-accordion-container">
+<!-- FAQ 1 -->
+<div class="rounded-xl bg-white border border-slate-200/80 shadow-xs overflow-hidden">
+<button class="faq-toggle w-full px-6 py-4.5 flex items-center justify-between text-left hover:bg-slate-50/70 transition-colors">
+<span class="text-sm sm:text-base text-slate-900 font-semibold">Q. 비전공자나 코딩 입문자도 따라갈 수 있나요?</span>
+<span class="material-symbols-outlined faq-icon text-slate-400 transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-answer px-6 pb-5 pt-1 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100/70" style="line-height: 1.85;">
+네, 가능합니다. 개강 전 4주 기초 프리코스와 정규 과정 데일리 1:1 오피스 아워를 통해 전담 멘토가 보충 지도를 지원합니다. (이전 기수 비전공자 비율 약 58%)
+</div>
+</div>
+<!-- FAQ 2 -->
+<div class="rounded-xl bg-white border border-slate-200/80 shadow-xs overflow-hidden">
+<button class="faq-toggle w-full px-6 py-4.5 flex items-center justify-between text-left hover:bg-slate-50/70 transition-colors">
+<span class="text-sm sm:text-base text-slate-900 font-semibold">Q. 국민내일배움카드 발급 및 100% 국비 지원 대상인가요?</span>
+<span class="material-symbols-outlined faq-icon text-slate-400 transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-answer px-6 pb-5 pt-1 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100/70" style="line-height: 1.85;">
+대한민국 미취업 청년 및 졸업예정자(졸업 2년 이내)라면 고용24를 통해 국민내일배움카드를 신청할 수 있으며, K-Digital Training 생애 최초 1회에 한해 100% 전액 지원됩니다.
+</div>
+</div>
+<!-- FAQ 3 -->
+<div class="rounded-xl bg-white border border-slate-200/80 shadow-xs overflow-hidden">
+<button class="faq-toggle w-full px-6 py-4.5 flex items-center justify-between text-left hover:bg-slate-50/70 transition-colors">
+<span class="text-sm sm:text-base text-slate-900 font-semibold">Q. 매월 지원되는 훈련장려금 조건은 무엇인가요?</span>
+<span class="material-symbols-outlined faq-icon text-slate-400 transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-answer px-6 pb-5 pt-1 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100/70" style="line-height: 1.85;">
+출석률 80% 이상 충족 시 실업급여 미수급자 또는 단기근로 대상자에게 매월 최대 316,000원의 장려금이 지급됩니다.
+</div>
+</div>
+<!-- FAQ 4 -->
+<div class="rounded-xl bg-white border border-slate-200/80 shadow-xs overflow-hidden">
+<button class="faq-toggle w-full px-6 py-4.5 flex items-center justify-between text-left hover:bg-slate-50/70 transition-colors">
+<span class="text-sm sm:text-base text-slate-900 font-semibold">Q. 수업 방식은 온·오프라인 중 어떻게 진행되나요?</span>
+<span class="material-symbols-outlined faq-icon text-slate-400 transition-transform duration-200">expand_more</span>
+</button>
+<div class="faq-answer px-6 pb-5 pt-1 text-slate-600 text-xs sm:text-sm leading-relaxed border-t border-slate-100/70" style="line-height: 1.85;">
+온·오프라인 하이브리드 방식입니다. 코딩 실습은 게더타운 가상 캠퍼스 및 Zoom으로 진행되며, 캡스톤 프로젝트와 데모데이는 강남 캠퍼스에서 진행됩니다. (지방 거주자는 100% 온라인 참여 가능)
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Clean Sticky Enrollment Sidebar with Soft Gradient Accent -->
+<div class="lg:col-span-4 sticky top-24 space-y-5">
+<div class="p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm space-y-6">
+<!-- Application Countdown Pill -->
+<div class="p-3.5 rounded-xl bg-slate-50 border border-slate-100 flex flex-col items-center justify-center text-center">
+<span class="text-xs text-blue-600 font-semibold mb-0.5">제 8기 모집 마감까지</span>
+<div class="text-xl font-bold text-slate-900 font-mono tracking-tight" id="deadline-timer">D-4 12:43:49</div>
+</div>
+<!-- Price Display -->
+<div class="space-y-1">
+<div class="flex items-center justify-between text-xs text-slate-400 line-through">
+<span class="">정상 교육비</span>
+<span class="">8,900,000원</span>
+</div>
+<div class="flex items-baseline justify-between pt-0.5">
+<span class="text-sm font-semibold text-slate-800">국비지원 실부담금</span>
+<div class="text-right">
+<span class="text-2xl font-extrabold text-blue-600 tracking-tight">0원</span>
+<span class="text-xs text-slate-500 font-medium block">전액 국비 지원</span>
+</div>
+</div>
+</div>
+<!-- Core Benefits Simple Checklist -->
+<div class="space-y-2.5 pt-3 border-t border-slate-100 text-xs text-slate-600" style="line-height: 1.7;">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-500 text-[17px] shrink-0">check_circle</span>
+<span class="">최신 M3 맥북 에어 전액 대여 지원</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-500 text-[17px] shrink-0">check_circle</span>
+<span class="">시니어 테크리드 1:1 코드 리뷰 주 3회</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-500 text-[17px] shrink-0">check_circle</span>
+<span class="">수료 후 6개월 1:1 취업 책임 케어</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-blue-500 text-[17px] shrink-0">check_circle</span>
+<span class="">OpenAI API &amp; AWS 클라우드 크레딧 지원</span>
+</div>
+</div>
+<!-- Main Call-to-Action Buttons with Blue Gradient -->
+<div class="space-y-2.5 pt-2">
+<a class="w-full flex items-center justify-center gap-2 py-3.5 px-6 rounded-xl gradient-blue-btn text-white text-sm font-bold shadow-sm hover:opacity-95 transition-all text-center" data-path="apply" href="#">
+<span class="">국비지원 0원 수강신청</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<button class="w-full flex items-center justify-center gap-1.5 py-2.5 px-4 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-700 text-xs font-semibold border border-slate-200/80 transition-colors" id="open-consult-modal-btn">
+<span class="material-symbols-outlined text-[17px] text-blue-600">support_agent</span>
+<span class="">1:1 무료 상담 신청</span>
+</button>
+<button class="w-full flex items-center justify-center gap-1.5 py-2 px-4 rounded-xl text-slate-500 hover:text-slate-800 text-xs font-medium transition-colors" id="download-curriculum-btn">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="">커리큘럼 PDF 다운로드</span>
+</button>
+</div>
+<!-- Trust Footnote -->
+<div class="pt-3 border-t border-slate-100 text-center text-xs text-slate-400 space-y-0.5">
+<p class="">고용노동부 직업능력개발훈련 인증과정</p>
+<p class="">내일배움카드 발급 및 행정절차 1:1 안내</p>
+</div>
+</div>
+<!-- Secondary Consultation Mini Box -->
+<div class="p-4 rounded-2xl bg-white border border-slate-200/80 shadow-xs flex items-center gap-3.5">
+<div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div class="flex-1">
+<div class="text-xs text-slate-500 font-medium">전화 상담 문의</div>
+<div class="text-base font-bold text-slate-900 tracking-tight">02-1588-0000</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Consultation Request Modal -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/40 backdrop-blur-xs hidden opacity-0 transition-opacity duration-300" id="consultation-modal">
+<div class="w-full max-w-md rounded-2xl bg-white p-7 shadow-2xl relative transform transition-all duration-300 scale-95 border border-slate-100" id="consultation-modal-box">
+<button class="absolute top-5 right-5 text-slate-400 hover:text-slate-700 p-1 rounded-full transition-colors" id="close-modal-btn">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+<div class="space-y-1 mb-5">
+<span class="inline-block px-2.5 py-0.5 rounded-full bg-blue-50 text-blue-600 text-xs font-semibold">1:1 교육과정 무료 상담</span>
+<h3 class="text-xl font-bold text-slate-900">상담 신청하기</h3>
+<p class="text-xs text-slate-500">1영업일 이내 전담 매니저가 연락을 드립니다.</p>
+</div>
+<form class="space-y-3.5" id="consultation-form" onsubmit="event.preventDefault(); alert('상담 신청이 완료되었습니다.'); document.getElementById('consultation-modal').classList.add('hidden');">
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1">성함</label>
+<input class="w-full h-10 px-3.5 rounded-lg bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="홍길동" required="" type="text">
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1">연락처</label>
+<input class="w-full h-10 px-3.5 rounded-lg bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="010-0000-0000" required="" type="tel">
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1">내일배움카드 상태</label>
+<div class="grid grid-cols-3 gap-2">
+<label class="flex items-center justify-center p-2 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer text-xs text-slate-700">
+<input checked="" class="accent-blue-500 mr-1.5" name="card-status" type="radio"> 보유 중
+</label>
+<label class="flex items-center justify-center p-2 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer text-xs text-slate-700">
+<input class="accent-blue-500 mr-1.5" name="card-status" type="radio"> 발급 예정
+</label>
+<label class="flex items-center justify-center p-2 rounded-lg bg-slate-50 border border-slate-200 cursor-pointer text-xs text-slate-700">
+<input class="accent-blue-500 mr-1.5" name="card-status" type="radio"> 잘 모름
+</label>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-700 mb-1">문의 내용</label>
+<textarea class="w-full p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-sm text-slate-900 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="궁금하신 사항을 간단히 적어주세요." rows="2"></textarea>
+</div>
+<button class="w-full py-3 rounded-xl gradient-blue-btn text-white text-sm font-semibold shadow-sm transition-all mt-1" type="submit">
+신청 완료하기
+</button>
+</form>
+</div>
+</div>
+</div>
+<script>
+  // Countdown Timer
+  (function initCountdown() {
+    let target = new Date().getTime() + (4 * 24 * 60 * 60 * 1000) + (12 * 60 * 60 * 1000) + (45 * 60 * 1000);
+    const timerElem = document.getElementById('deadline-timer');
+
+    function update() {
+      const now = new Date().getTime();
+      const diff = target - now;
+
+      if (diff <= 0) {
+        if (timerElem) timerElem.innerText = '마감 완료';
+        return;
+      }
+
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      const pad = (n) => String(n).padStart(2, '0');
+      if (timerElem) {
+        timerElem.innerText = `D-${days} ${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+      }
+    }
+
+    setInterval(update, 1000);
+    update();
+  })();
+
+  // Curriculum Accordion Behavior
+  (function initCurriculumAccordion() {
+    const items = document.querySelectorAll('#curriculum-accordion-container .accordion-item');
+    items.forEach((item) => {
+      const header = item.querySelector('.accordion-header');
+      const content = item.querySelector('.accordion-content');
+      const icon = item.querySelector('.accordion-icon');
+
+      header.addEventListener('click', () => {
+        const isOpen = !content.classList.contains('hidden');
+        if (isOpen) {
+          content.classList.add('hidden');
+          icon.classList.remove('rotate-180');
+        } else {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+
+    const toggleAllBtn = document.getElementById('toggle-all-curriculum');
+    let allExpanded = true;
+    if (toggleAllBtn) {
+      toggleAllBtn.addEventListener('click', () => {
+        allExpanded = !allExpanded;
+        items.forEach((item) => {
+          const content = item.querySelector('.accordion-content');
+          const icon = item.querySelector('.accordion-icon');
+          if (allExpanded) {
+            content.classList.remove('hidden');
+            icon.classList.add('rotate-180');
+          } else {
+            content.classList.add('hidden');
+            icon.classList.remove('rotate-180');
+          }
+        });
+        toggleAllBtn.innerText = allExpanded ? '모두 접기' : '모두 펼치기';
+      });
+    }
+  })();
+
+  // FAQ Accordion Behavior
+  (function initFaqAccordion() {
+    const toggles = document.querySelectorAll('.faq-toggle');
+    toggles.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        const isHidden = answer.classList.contains('hidden');
+
+        if (isHidden) {
+          answer.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        } else {
+          answer.classList.add('hidden');
+          icon.classList.remove('rotate-180');
+        }
+      });
+    });
+  })();
+
+  // Consultation Modal Handlers
+  (function initModal() {
+    const modal = document.getElementById('consultation-modal');
+    const modalBox = document.getElementById('consultation-modal-box');
+    const openBtn = document.getElementById('open-consult-modal-btn');
+    const closeBtn = document.getElementById('close-modal-btn');
+
+    function openModal() {
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        modalBox.classList.remove('scale-95');
+      }, 10);
+    }
+
+    function closeModal() {
+      modal.classList.add('opacity-0');
+      modalBox.classList.add('scale-95');
+      setTimeout(() => {
+        modal.classList.add('hidden');
+      }, 300);
+    }
+
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (modal) {
+      modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+      });
+    }
+
+    const downloadBtn = document.getElementById('download-curriculum-btn');
+    if (downloadBtn) {
+      downloadBtn.addEventListener('click', () => {
+        alert('Credence 생성형 AI 풀스택 부트캠프 요약 커리큘럼(PDF) 다운로드를 시작합니다.');
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-slate-50 border-t border-slate-200/70 text-slate-500"><div class="max-w-7xl mx-auto px-6 lg:px-12 py-16"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12"><div class="lg:col-span-2 space-y-4"><div class="flex items-center gap-3"><img alt="Credence EduTech Logo" class="h-7 w-auto object-contain" src="assets/img_506f030a9a.png"><span class="text-base text-slate-800 font-bold">Credence EduTech</span></div><p class="text-xs text-slate-500 max-w-sm leading-relaxed" style="line-height: 1.75;">기업과 핵심 인재의 성장을 위한 최고 수준의 산업 연계 직무 교육 및 디지털 트랜스포메이션 전문 연수 솔루션을 제공합니다.</p><div class="flex items-center gap-2 pt-1"><span class="inline-flex items-center px-2.5 py-1 rounded-md bg-white border border-slate-200 text-blue-600 text-xs font-medium">고용노동부 직업능력개발 우수기관</span><span class="inline-flex items-center px-2.5 py-1 rounded-md bg-white border border-slate-200 text-blue-600 text-xs font-medium">K-Digital Training 공식 파트너</span></div></div><div><h4 class="text-sm text-slate-900 font-semibold mb-3">교육과정</h4><ul class="space-y-2 text-xs"><li class=""><a class="hover:text-blue-600 transition-colors" data-path="courses" href="courses.html">생성형 AI &amp; 데이터 사이언스</a></li><li class=""><a class="hover:text-blue-600 transition-colors" data-path="courses" href="courses.html">클라우드 &amp; 소프트웨어 공학</a></li><li class=""><a class="hover:text-blue-600 transition-colors" data-path="courses" href="courses.html">프로덕트 매니지먼트 &amp; UX</a></li><li class=""><a class="hover:text-blue-600 transition-colors" data-path="courses" href="courses.html">DT 전략 &amp; 엔터프라이즈 리더십</a></li></ul></div><div><h4 class="text-sm text-slate-900 font-semibold mb-3">고객센터</h4><div class="space-y-1.5 text-xs"><p class="text-base text-blue-600 font-bold tracking-tight">02-1588-0000</p><p class="text-slate-500">운영시간: 평일 09:00 ~ 18:00</p><p class="text-slate-400">점심시간: 12:00 ~ 13:00</p><p class="text-slate-500 pt-1">이메일: <a class="text-blue-600 hover:underline" href="#">contact@credence.edu</a></p></div></div><div><h4 class="text-sm text-slate-900 font-semibold mb-3">연계 및 소셜</h4><div class="flex flex-col space-y-2 text-xs"><a class="flex items-center gap-1.5 hover:text-blue-600 transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">corporate_fare</span>기업교육 파트너 네트워크</a><a class="flex items-center gap-1.5 hover:text-blue-600 transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">workspace_premium</span>학습 이수 인증 센터</a><a class="flex items-center gap-1.5 hover:text-blue-600 transition-colors" href="#"><span class="material-symbols-outlined text-[16px]">feed</span>테크 인사이트 블로그</a></div></div></div><div class="pt-6 border-t border-slate-200/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-slate-400"><p class="">© 2025 Credence EduTech Inc. All rights reserved.</p><div class="flex items-center gap-5 text-slate-500"><a class="hover:text-blue-600 transition-colors" data-path="privacy-policy" href="#">개인정보처리방침</a><a class="hover:text-blue-600 transition-colors" data-path="terms-of-service" href="#">이용약관</a><a class="hover:text-blue-600 transition-colors" data-path="refund-policy" href="#">환불 규정</a></div></div></div></footer>
+
+</body></html>
